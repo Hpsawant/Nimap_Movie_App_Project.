@@ -1,0 +1,41 @@
+/* Navbar.css */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    font-size: 18px;
+  }
+  
+  nav form {
+    display: flex;
+  }
+  
+  nav input {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+  }
+  
+  nav button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  nav button:hover {
+    background-color: #ff4500;
+  }
+  

@@ -1,0 +1,112 @@
+/* MovieDetailPage.css */
+
+/* Main container for the movie detail page */
+.movie-detail-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;  /* Movie poster on the left, details on the right */
+    gap: 30px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    justify-items: center;
+  }
+  
+  /* Styling for the movie poster */
+  .movie-poster {
+    width: 100%;
+    max-width: 300px;  /* Ensure poster size doesn't exceed 300px */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Movie information section */
+  .movie-info {
+    max-width: 700px;
+  }
+  
+  .movie-info h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .movie-info p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .movie-info strong {
+    color: #222;
+  }
+  
+  /* Movie Cast Section */
+  .movie-cast {
+    grid-column: span 2;  /* Make cast section span both columns */
+    margin-top: 40px;
+  }
+  
+  .movie-cast h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Cast List as a flex container for row layout */
+  .cast-list {
+    display: flex;
+    justify-content: space-between;  /* Evenly distribute cast members */
+    gap: 20px;
+    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
+  }
+  
+  .cast-member {
+    flex-basis: 18%;  /* Each cast member takes 18% of the width */
+    text-align: center;
+  }
+  
+  .cast-member img {
+    width: 120px;  /* Larger image size */
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .cast-member p {
+    font-size: 1em;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    /* Responsive layout: stack the columns vertically on smaller screens */
+    .movie-detail-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .movie-info h1 {
+      text-align: center;
+    }
+  
+    .cast-list {
+      justify-content: center;
+    }
+  
+    .cast-member {
+      flex-basis: 45%;  /* Make cast member wider on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cast-member {
+      flex-basis: 100%;  /* Full-width cast member on small screens */
+    }
+  
+    .movie-info p {
+      font-size: 1em;  /* Slightly smaller font on very small screens */
+    }
+  }
+  

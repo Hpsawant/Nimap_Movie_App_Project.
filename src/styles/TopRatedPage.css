@@ -1,0 +1,21 @@
+/* TopRatedPage.css */
+
+.toprated-container {
+    padding: 20px;
+    background-color: #fff5e1;
+  }
+  
+  .movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff6347;
+    margin-bottom: 25px;
+  }
+  

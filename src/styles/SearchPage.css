@@ -1,0 +1,28 @@
+/* SearchPage.css */
+
+.searchpage-container {
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .no-results {
+    text-align: center;
+    font-size: 1.5em;
+    color: #888;
+    margin-top: 40px;
+  }
+  
